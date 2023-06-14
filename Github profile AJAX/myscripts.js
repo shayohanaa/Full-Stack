@@ -2,13 +2,12 @@ function getProfile(e)
 {
     e.preventDefault();
     var username = document.getElementById('username').value;
+    var msg = document.getElementById('msg');
     if(!username || username == '')
     {
-        var msg = document.getElementById('msg');
         msg.className = 'alert alert-danger';
         msg.innerHTML = '404: Profile not found!';
     } else {
-        var msg = document.getElementById('msg');
         msg.className = 'alert alert-success';
         msg.innerHTML = 'Username found successfully!';
     }
