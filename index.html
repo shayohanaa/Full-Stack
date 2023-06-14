@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript.</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="js/jquery-3.7.0.min.js"></script>
+    </head>
+    <body>
+        <p class="p1"><strong>This is a paragraph.</strong></p>
+        <button id="myBtn">Click.</button>
+        <br><br>
+        <div id="square"></div>
+        <br><br>
+        <div id="pos"></div>
+
+        <script>
+            $(document).ready(function(){
+                $('p').hide();
+            });
+            
+            $('#myBtn').click(function(){
+                alert(1);
+            });
+
+            $('#myBtn').click(function(){
+                $('.p1').toggle();
+            });
+
+            $('#myBtn').dblclick(function(){
+                $('.p1').toggle();
+            });
+
+            $('#square').hover(function(){
+                $(this).text('Hovering...');
+            }, function(){
+                $(this).text('');
+            });
+
+            $('#square').mouseenter(function(){
+                $(this).text('Hovering...');
+
+                $(this).mouseout(function(){
+                $(this).text('');
+                });
+            });
+
+            $('#square').mousedown(function()
+            {
+                $(this).text('Hovering...');
+                $(this).mouseup(function()
+                {
+                    $(this).text('');
+                });
+            });
+
+            $('#square').mousemove(function(event){
+                var msg = 'Mouse Position - ';
+                msg += event.pageX + ' ' + event.pageY;
+                $('#pos').html('<div>'+msg+'</div>');
+            });
+        </script>
+    </body>
+</html>
