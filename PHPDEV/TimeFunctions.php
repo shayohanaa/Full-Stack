@@ -1,5 +1,4 @@
 <?php
-/*
 // Constants
 define('HOSTNAME', '<h1>localhost</h1>');
 echo HOSTNAME;
@@ -48,7 +47,6 @@ while($i < 10){
     echo 'Number '. $i.'<br>';
     $i++;
 }
-*/
 
 // Foreach
 $users = Array('Mike', 'John', 'Daniel');
