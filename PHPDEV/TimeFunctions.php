@@ -1,56 +1,52 @@
 <?php
-// Constants
-define('HOSTNAME', '<h1>localhost</h1>');
-echo HOSTNAME;
+// String
+$myStr = 'Hello World';
+var_dump($myStr);
 
-// Variables
-$user = 'John doe';
-$num = 5;
-echo $user .' has '.$num. ' donuts.';
+// Int
+$myInt = 55;
+var_dump($myInt);
+
+// Float
+$myFloat = 4.4;
+var_dump($myFloat);
+
+// Boolean
+$myBool = false;
+var_dump($myBool);
 
 // Array
-$users = Array('Mike', 'Jake', 'Jose');
-$users = ['Mike', 'Jake', 'Jose'];
-print_r($users);
-$users[3] = 'Micheal';
-echo $users[3];
-$ages = Array(
-'Karen' => 34,
-'Larry' => 44,
-'Jeff' => 37
-);
-echo $ages['Larry']; // 44
+$myArr = [1,2,3,4,5,6];
+var_dump($myArr);
 
-// Functions
-function writeMsg($msg = 'Hello world'){
-    return $msg;
-}
-echo writeMsg();
+// Null
+$myNull = NULL;
+var_dump($myNull);
 
-// Conditionals
-$num1 = 40;
-$num2 = 21;
-if($num1 > 30 && $num2 == 20){
-    echo 'Yes it is';
-} else {
-    echo 'No it is not';
-}
+$myStr = 'Hello world';
+echo strlen($myStr);
+echo str_word_count($myStr);
+echo strrev($myStr);
+echo strpos($myStr, 'world');
+echo str_replace('world', 'shay', $myStr);
 
-// Loops
-for($i = 0;$i<10;$i++){
-    echo 'Number '. $i.'<br>';
-}
+echo max(23,55,12,64,102,23);
+echo min(1,54,102,5839);
+echo abs(-5);
+echo floor(4.3);
+echo ceil(5.8);
+echo rand(1, 100);
+echo 'The date is '. date('Y/m/d'). '<br>';
+echo 'The date is '. date('Y.m.d'). '<br>';
+echo 'The date is '. date('Y-m-d'). '<br>';
+echo 'The day is '. date('l'). '<br>';
+echo 'The Month is '. date('M'). '<br>';
+echo 'The Year is '. date('Y'). '<br>';
+echo 'The Time is '. date('h:i:sa'). '<br>';
 
-// While Loops
-$i = 0;
-while($i < 10){
-    echo 'Number '. $i.'<br>';
-    $i++;
-}
-
-// Foreach
-$users = Array('Mike', 'John', 'Daniel');
-foreach($users as $user){
-    echo $user.'<br>';
-}
+// Set Time Zone
+date_default_timezone_set('Israel');
+echo 'The time is '. date('h:i:sa'). ' Time zone in Israel<br>';
+$d = strtotime("tomorrow");
+echo 'The time is '. date('h:i:sa', $d). '<br>';
 ?>
