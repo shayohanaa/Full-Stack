@@ -1,6 +1,6 @@
 <?php
 // Connect to mySQL
-$conn = mysqli_connect('localhost', 'root', '123123', 'htmldb');
+$conn = mysqli_connect('localhost', '<user>', '<PASSWORD>', '<DB>');
 
 // If connection failed
 if(mysqli_connect_errno()){
