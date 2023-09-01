@@ -18,7 +18,14 @@
     left:50%;
     top:50%;
     transform: translate(-50%, -50%);
-    background-color:#00b7ff;
+    background:linear-gradient(to right, #FFFF00, #00F0FF);
+    box-shadow: 2px 2px 2px 0;
+}
+
+.toggleBtn:active {
+  box-shadow: 0 0 0 0;
+  margin-left:3px;
+  margin-top:3px;
 }
 
 input {
@@ -135,7 +142,7 @@ input {
     top:7px;
     left:7px;
     transform: translate(-50%, -50%);
-    z-index:1000;
+    z-index:1;
 }
 
 .hole:nth-child(2) {
