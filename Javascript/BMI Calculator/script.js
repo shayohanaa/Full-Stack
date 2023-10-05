@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function()
         if(ageVal != '' && heightVal != '' && weightVal != '')
         {
             e.preventDefault();
-            
             const heightInt = parseInt(heightVal);
             const formattedHeight = heightInt.toString().slice(0, 1) + "." + heightInt.toString().slice(1);
             const FinalheightResult = formattedHeight * formattedHeight;
@@ -44,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function()
                 title.innerHTML = 'Obesity';
                 letters.innerHTML = 'Obesity is a severe condition characterized by excessive body fat accumulation. It usually implies a significantly higher body weight compared to the recommended range and is linked to various health problems, including cardiovascular disease, type 2 diabetes, and joint issues.';
             }
-            
         } else {
             alert('please fill all fields.');
         }
