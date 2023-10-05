@@ -1,0 +1,33 @@
+body {
+    background-color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.box {
+    width:500px;
+    height:500px;
+    background-color: #000;
+    border-radius: 0;
+}
+
+.ranger {
+    position:absolute;
+    top:520px;
+    width:100%;
+    text-align: center;
+}
+
+.range {
+    width:100%;
+    margin:10px 0;
+}
+
+.scale {
+    font-size: 10px;
+}
