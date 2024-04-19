@@ -1,0 +1,3 @@
+!! Posts & Comments creator !!
+
+This system implements post and comment functionality using HTML, PHP, and a MySQL database, without CSS styling. The system includes the ability to create posts with attributes such as Name, Title, Category, and Content. Each post allows users to leave comments. When a post is deleted, its associated comments are also deleted.

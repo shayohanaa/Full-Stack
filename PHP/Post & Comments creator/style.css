@@ -1,0 +1,27 @@
+body {
+    color:#000000;
+    background-color: #f8f8f8;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.posts ul:nth-of-type(even) {
+    background-color: #dedede;
+}
+
+a {
+    text-decoration: none;
+}
+
+.textarea {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width:250px;
+    height:200px;
+    text-align: top;
+}
