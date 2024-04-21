@@ -1,0 +1,1 @@
+// Add table name 'products' to mySQL with id, productName, img, description columns.

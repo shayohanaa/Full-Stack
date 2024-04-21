@@ -1,0 +1,115 @@
+body {
+    height:100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:0;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+}
+
+.red {
+    color:#ff0000;
+    font-weight: bold;
+}
+
+.container {
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width:100%;
+}
+
+.priceFilter {
+    width:250px;
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+    left:50%;
+    top:30px;
+    transform: translateX(-50%);
+}
+
+.productsTitle {
+    text-align: center;
+    position:relative;
+    top:130px;
+}
+
+.products {
+    position:relative;
+    text-align: center;
+    top:130px;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.product {
+    background-color: #f9f9f9;
+    margin:45px 15px;
+}
+
+.product img {
+    background-color: #fff;
+    padding:10px;
+}
+
+.button {
+    width:80%;
+    height:40px;
+}
+
+.product button {
+    margin:8px 0;
+}
+
+.addToCart {
+    background-color: #fff;
+    color:#000;
+    font-weight: bold;
+}
+
+.buyNow {
+    background-color: #000000;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.addToCart:hover {
+    transition:0.3s;
+    background-color: #000000;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.buyNow:hover {
+    transition:0.3s;
+    background-color: #ffffff;
+    color:#000000;
+    font-weight: bold;
+}
+
+.addToCart:not(:hover) {
+    transition:0.3s;
+}
+
+.buyNow:not(:hover) {
+    transition:0.3s;
+}
+
+.noProducts {
+    text-align: center;
+    position:relative;
+    top:150px;
+}
+
+.prevPrice {
+    text-decoration: line-through;
+}
