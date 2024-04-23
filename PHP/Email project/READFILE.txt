@@ -1,0 +1,2 @@
+this is a email project, the design isn't responsive,
+the project built on practicing mySQL and databases.

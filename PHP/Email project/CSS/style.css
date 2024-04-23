@@ -1,0 +1,179 @@
+.container {
+    display:grid;
+    grid-template-columns: 18% 77% 5%;
+}
+
+.sideBar .header {
+    grid-template-columns: 20% 80%;
+}
+
+.sideBar {
+    display:flex;
+    flex-direction: column;
+}
+
+.icon a {
+    position:relative;
+    left:50%;
+    top:25%;
+}
+
+.links li:hover {
+    background-color: #f8f8f8;
+}
+
+.more:hover {
+    background-color: #f8f8f8;
+}
+
+.subLinks li:hover {
+    background-color: #f8f8f8;
+}
+
+.selected {
+    background-color:#c2e3ff;
+    font-weight: bold;
+}
+
+.labels i {
+    margin:20px 0;
+}
+
+.tools {
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.websiteContent {
+    grid-template-rows: 10% auto;
+}
+
+.help {
+    display:grid;
+    grid-template-columns: 70% 30%;
+    position:relative;
+    top:25%;
+}
+
+.help input {
+    height:30px;
+}
+
+.mailbox li {
+    display:grid;
+    grid-template-columns: 20% 70% 10%;
+}
+
+.mailbox p {
+    font-size: 15px;
+}
+
+.mailbox li:hover {
+    transition:0.3s;
+    background-color: #efefef;
+}
+
+.main p {
+    position:relative;
+    left:5px;
+}
+
+.sideBar .waiting {
+    margin:0 30px;
+}
+
+.mail .header {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.preVnexT i {
+    font-size:1.4rem;
+}
+
+.preVnexT .prev:hover {
+    transition:0.3s;
+    cursor:pointer;
+    background-color: #dadada;
+    border-radius: 50%;
+}
+
+.preVnexT .next:hover {
+    transition:0.3s;
+    cursor:pointer;
+    background-color: #dadada;
+    border-radius: 50%;
+}
+
+.mail .icons {
+    display:grid;
+    grid-template-columns: repeat(10, 2fr);
+}
+
+.icons .icon:hover {
+    transition:0.3s;
+    cursor:pointer;
+    background-color: #dadada;
+    border-radius: 50%;
+}
+
+i:hover {
+    transition:0.3s;
+    cursor:pointer;
+    background-color: #dadada;
+    border-radius: 50%;
+}
+
+.icon i {
+    position:relative;
+    top:50%;
+    transform: translateY(-55%);
+    font-size: 20px;
+}
+
+.unclickable {
+    pointer-events: none;
+    cursor: default;
+    color: gray; /* Optionally change the color to indicate it's unclickable */
+    text-decoration: none; /* Optionally remove underline */
+}
+
+@media (max-width:1328px) {
+    .sideBar li {
+        font-size: 15px;
+    }
+    .more {
+        font-size: 15px;
+    }
+}
+@media (max-width:1251px) {
+    .sideBar li {
+        font-size: 10px;
+    }
+    .more {
+        font-size: 10px;
+    }
+}
+@media (max-width:1130px) {
+    .compose i {
+        display:none;
+    }
+}
+@media (max-width:995px) {
+    .sideBar li {
+        font-size: 8px;
+    }
+    .more {
+        font-size: 8px;
+    }
+    .compose button {
+        width:90%;
+    }
+}
+@media (max-width:782px) {
+    .icons {
+        display:flex;
+        flex-direction: row;
+    }
+}
