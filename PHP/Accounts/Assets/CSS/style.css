@@ -1,0 +1,312 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+ul {
+    padding:0;
+}
+
+.container {
+    position:absolute;
+    top:0;
+    width:100%;
+}
+
+.registerForm {
+    position:relative;
+    left:50%;
+    top:50px;
+    transform: translateX(-50%);
+}
+
+.loginForm {
+    position:relative;
+    left:50%;
+    top:50px;
+    transform: translateX(-50%);
+}
+
+form {
+    width:50%;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.form-group label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form-group input {
+    height:50px;
+    border-radius: 5px;
+    width:100%;
+}
+
+input[type="submit"] {
+    background-color: #0063FFED;
+    color:#fff;
+}
+
+input[type="submit"]:hover {
+    transition:0.3s;
+    background-color: #ffffffed;
+    color:#0063FFED;
+    cursor:pointer;
+}
+
+.alert {
+    margin-top:15px;
+    text-align: center;
+    font-size: 20px;
+    border:1px solid #000;
+    border-radius: 12px;
+}
+
+.error {
+    background-color: #ffdfdf;
+    color:#ff0000;
+}
+
+.success {
+    background-color: #d1ffdb;
+    color:#000000;
+}
+
+.header {
+    padding:20px;
+    background-color: #009dff;
+    height:150px;
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.2);
+}
+
+.top-tools ul {
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width:20%;
+    transition:transform 0.3s ease;
+}
+
+.top-tools li:hover {
+    transition:0.3s;
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+.menu ul {
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width:50%;
+    transition:transform 0.3s ease;
+}
+
+.menu li:hover {
+    transition:0.3s;
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+.inner-header {
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.active {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.hero {
+    width:100%;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+.heroImg {
+    padding:50px;
+}
+
+.heroDiscount {
+    padding:10px;
+    border-radius: 18px;
+    border:1px solid #000;
+    position:relative;
+    top:10px;
+}
+
+.heroDetails h3 {
+    width:80%;
+}
+
+.heroBtns {
+    display:flex;
+    justify-content: space-between;
+    width:50%;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.heroBtns a {
+    padding:15px;
+    width:180px;
+    text-align: center;
+}
+
+.heroBtns a:hover {
+    transition:0.3s;
+    color: #009dff;
+}
+
+.getstarted {
+    border:1px solid #000;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.pricingplans:hover > i {
+    transition:0.3s;
+    margin-left:10px;
+    font-size: 18px;
+}
+
+.signlink {
+    transition: transform 0.3s ease;
+}
+
+.signlink:hover > a {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.signlink {
+    margin-bottom:45px;
+}
+
+.footertext {
+    width: 100%;
+    color:#fff;
+    background-color: #000000; /* Example background color */
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Add padding */
+    font-size: 15px;
+    height:70px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    top:100vh;
+}
+
+.top-tools .tools {
+    display:flex; 
+    padding:0; 
+    list-style:none; 
+    justify-content:space-around;
+}
+
+h1 {
+    text-align: center;
+}
+
+.account {
+    width:80%;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.account .accountSections {
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    height:100px;
+}
+
+.account .accountSection {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    box-shadow: 0 2px 5px #666;
+    transition: transform 0.3s ease;
+}
+
+.account .accountSection:hover {
+    transform: scale(1.1);
+    background-color: #e7e7e7;
+}
+
+.account .accountSection:not(:hover) {
+    transition:0.3s;
+    background-color: #ffffff;
+}
+
+.errortopMsg {
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color: #d1d1d1;
+    color:#000;
+}
+
+.Accdetails {
+    width:90%;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: #f7f7f7;
+    border:1px solid #666;
+    padding:10px;
+}
+
+.Accdetails li {
+    width:500px;
+}
+
+.delAccountwarning {
+    text-align: center;
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-color: #ecececbd;
+    border-radius: 12px;
+    border:1px solid #000;
+    padding:15px;
+}
+
+.delBtns {
+    display:flex;
+    justify-content: space-around;
+    padding:15px;
+    margin:10px;
+}
+
+.delBtns a, button {
+    padding:15px;
+    width:200px;
+}
