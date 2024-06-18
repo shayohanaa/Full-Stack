@@ -1,0 +1,69 @@
+/* Elements Animations */
+
+.anim.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.anim {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+/* ELEMENT UP */
+.animup {
+    transform: translateY(50px);
+}
+.animup1 {
+    transform: translateY(150px);
+}
+/* ELEMENT DOWN */
+.animdown {
+    transform: translateY(-50px);
+}
+.animdown1 {
+    transform: translateY(-150px);
+}
+/* ELEMENT LEFT */
+.animleft {
+    transform: translatex(-50px);
+}
+.animleft1 {
+    transform: translatex(-150px);
+}
+/* ELEMENT RIGHT */
+.animright {
+    transform: translatex(50px);
+}
+.animright1 {
+    transform: translatex(150px);
+}
+/* FADE-IN */
+.scale-up {
+    transform: scale(0.9);
+    transition: transform 0.6s ease-out;
+}
+.show.scale-up {
+    transform: scale(1);
+}
+.scale-down {
+    transform: scale(1.1);
+    transition: transform 0.6s ease-out;
+}
+.show.scale-down {
+    transform: scale(1);
+}
+/* ROTATE */
+.rotater {
+    transform: rotate(-10deg);
+    transition: transform 0.6s ease-out;
+}
+.show.rotate {
+    transform: rotate(0deg);
+}
+.rotatel {
+    transform: rotate(10deg);
+    transition: transform 0.6s ease-out;
+}
+.show.rotate {
+    transform: rotate(0deg);
+}
