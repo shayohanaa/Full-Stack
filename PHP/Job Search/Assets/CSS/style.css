@@ -1,0 +1,115 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    background-color: #ffffff;
+    color:#000000;
+    margin: 0;
+}
+
+::selection {
+    background: none;
+    color:#0080ff5f;
+}
+
+li, ul{
+    list-style: none;
+    padding:0;
+}
+
+.container {
+    position:absolute;
+    top:0;
+    width:100%;
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+}
+
+.jobs {
+    display:flex;
+    flex-direction: column;
+    background-color: #0084ff44;
+}
+
+.jobConnect {
+    width:50%;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.jobs select {
+    width:70%;
+    height:40px;
+    text-align: center;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    margin:10px 0;
+}
+
+.jobs input[type="submit"]
+{
+    width:50%;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    margin:10px 0;
+}
+
+.allPos li {
+    background-color: #f8f8f8;
+    color:#000;
+    width:100%;
+    padding:25px;
+    margin:10px 0;
+}
+
+.allPos .job {
+    display:grid;
+    grid-template-columns: 70% 30%;
+}
+
+.job .jobBtn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.169);
+    border-radius: 15px;
+    height:40px;
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.createJob {
+    width:50%;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.createJob input {
+    border-radius: 0;
+    height:45px;
+}
+
+.createJob select {
+    border-radius: 0;
+    height:45px;
+    width:50%;
+    text-align: center;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.createJob input[type="submit"] {
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    width:50%;
+    margin:15px 0;
+}
