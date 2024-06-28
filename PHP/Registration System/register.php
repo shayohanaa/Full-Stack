@@ -33,11 +33,11 @@
             </div>
             <div class="form-group">
                 <label for="pass">Password: </label>
-                <input type="text" name="pass" placeholder="Enter your password">
+                <input type="password" name="pass" placeholder="Enter your password">
             </div>
             <div class="form-group">
                 <label for="cpass">Confirm password: </label>
-                <input type="text" name="cpass" placeholder="re-enter your password">
+                <input type="password" name="cpass" placeholder="re-enter your password">
             </div>
             <input type="submit" value="Reigster">
         </form>
