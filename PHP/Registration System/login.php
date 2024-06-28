@@ -21,7 +21,7 @@
             </div>
             <div class="form-group">
                 <label for="pass">Password: </label>
-                <input type="text" name="pass" placeholder="Enter your password">
+                <input type="password" name="pass" placeholder="Enter your password">
             </div>
             <input type="submit" value="Reigster">
         </form>
