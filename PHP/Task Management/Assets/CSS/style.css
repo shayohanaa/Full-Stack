@@ -1,0 +1,132 @@
+:root {
+    --primary-bg-color: linear-gradient(to bottom, #fff 20%, #0077ffc9);
+    --primary-btn-color: linear-gradient(to bottom, #0077ffc9 10%, #003878fd);;
+    --chat-btn-color: linear-gradient(to bottom, #00a2ff 10%, #acd3fffd);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+    display: flex;
+
+}
+
+body {
+    background-color: #0062ff1a;
+    color:#0059ff;
+}
+
+::selection {
+    background: none;
+    color:#000000;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    line-height: 2.5; /* Ensure this is applied correctly */
+    width:100%;
+    text-align: center;
+}
+
+.taskManagement {
+    text-align: center;
+    margin-top:15px;
+}
+
+.taskManagement form {
+    position:relative;
+    left:25%;
+    width:50%;
+    text-align: center;
+    border:1px solid #000;
+    border-radius: 15px;
+    padding:15px;
+    box-shadow: 2px 2px 4px 3px #666;
+}
+
+.task {
+    padding:10px;
+    text-align: left;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    padding:5px;
+    margin:5px 0;
+}
+
+.allTasks li:nth-of-type(odd) {
+    background-color: #0062ff1a;
+}
+
+.task .buttons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.task p {
+    width: 40%;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.buttons a {
+    width:100%;
+    text-align: center;
+    background-color: #00a2ff;
+    border:1px solid #fff;
+    color:#fff;
+    transition: transform 0.3s ease;
+}
+
+.buttons a:hover {
+    transform:scale(1.1);
+}
+
+.buttons a:nth-of-type(1):hover {
+    background-color: #d9efff;
+    color:#000;
+}
+.buttons a:nth-of-type(2):hover {
+    background-color: #ffffc5;
+    color:#000;
+}
+.buttons a:nth-of-type(3):hover {
+    background-color: #d2ffd9;
+    color:#000;
+}
+.buttons a:nth-of-type(4):hover {
+    background-color: #ffcfcf;
+    color:#000;
+}
+
+.viewtasks a {
+    margin:0 15px;
+    border:1px solid #00a2ff;
+    border-radius: 12px;
+    padding:10px;
+}
+
+.viewtasks a:hover {
+    transition:0.3s;
+    background-color: #00a2ff;
+    color:#fff;
+}
+
+.list li {
+    display:flex;
+    flex-direction: row;
+    gap:25px;
+    align-items: center;
+    justify-content: center;
+}
