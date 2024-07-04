@@ -26,7 +26,7 @@
                 <p>No completed tasks found.</p>
             <?php endif; ?>
         </ul>
-        <a href="index.php">Back Homepage</a>
+        <a href="index.php" class="homepage">Back Homepage</a>
     </div>
 </body>
 </html>
