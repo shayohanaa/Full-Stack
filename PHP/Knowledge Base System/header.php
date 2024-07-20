@@ -17,7 +17,7 @@
     <header class="header">
         <div class="logo">
             <A href="index.php">
-                <img src="Assets/media/CypherHosting-LOGONOBG.png" alt="CypherHosting">
+                <img src="Assets/media/LOGO.png" alt="LOGO">
             </a>
         </div>
         <nav class="search">
