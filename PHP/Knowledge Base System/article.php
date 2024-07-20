@@ -34,6 +34,8 @@ include 'Assets/config.php';
                     </strong>
                     <br>
                     <a href="editArticle.php?artId=<?php echo $row['id']; ?>" class="black b-8">Edit article</a>
+                    <br>
+                    <a href="delArticle.php?artId=<?php echo $row['id']; ?>" class="delArt b-8">Delete article</a>
                 </p>
             </div>
             <div class="likeornot">
