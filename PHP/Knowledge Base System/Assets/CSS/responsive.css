@@ -1,0 +1,16 @@
+/* Max Width */
+@media (max-width:1135px) {
+    .likeornot .vote {
+        flex-direction: column;
+        margin:15px 0;
+    }
+
+    .likeornot .vote a {
+        margin:15px 0;
+    }
+}
+
+
+/* Min Width */
+
+
