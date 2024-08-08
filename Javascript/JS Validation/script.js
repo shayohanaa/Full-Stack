@@ -1,11 +1,11 @@
 function register(e){
     e.preventDefault();
     
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    var password1 = document.getElementById('password1').value;
-    var msg = document.getElementById('msg');
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const password1 = document.getElementById('password1').value;
+    const msg = document.getElementById('msg');
 
     if(name == '' || email == '' || password == '' || password1 == ''){
         msg.className = 'alert alert-danger';
