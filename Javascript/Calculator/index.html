@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:#000;">Homepage</h1>
+        <div class="section">
+            <h3>Calculator: </h3>
+            <b>Calculate something...</b>
+            <div class="calculate">
+                <div class="calc">
+                    <div class="calc-header">
+                        <div class="answer">
+                            <div class="ans-char" id="ansChar"></div>
+                        </div>
+                    </div>
+                    <div class="calc-body">
+                        <div class="calc-btns">
+                            <div class="button" onclick="reset(this)">C</div>
+                            <div class="button" value="+/-" onclick="operation(this)">+/-</div>
+                            <div class="button" value="%" onclick="operation(this)">%</div>
+                            <div class="button bg-orange" value="/" onclick="operation(this)">÷</div>
+                            <div class="button" value="7" onclick="charClicked(this)">7</div>
+                            <div class="button" value="8" onclick="charClicked(this)">8</div>
+                            <div class="button" value="9" onclick="charClicked(this)">9</div>
+                            <div class="button bg-orange" value="*" onclick="operation(this)">*</div>
+                            <div class="button" value="4" onclick="charClicked(this)">4</div>
+                            <div class="button" value="5" onclick="charClicked(this)">5</div>
+                            <div class="button" value="6" onclick="charClicked(this)">6</div>
+                            <div class="button bg-orange" value="-" onclick="operation(this)">-</div>
+                            <div class="button" value="1" onclick="charClicked(this)">1</div>
+                            <div class="button" value="2" onclick="charClicked(this)">2</div>
+                            <div class="button" value="3" onclick="charClicked(this)">3</div>
+                            <div class="button bg-orange" value="+" onclick="operation(this)">+</div>
+                        </div>
+                        <div class="calc-footer">
+                            <div class="button" value="0" onclick="charClicked(this)">0</div>
+                            <div class="button" value="." onclick="charClicked(this)">.</div>
+                            <div class="button bg-orange" value="=" onclick="calculate()">=</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Assets/Scripts/scripts.js"></script>
+</body>
+</html>
